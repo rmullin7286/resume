@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+\usepackage{ebgaramond} % Use the EB Garamond font
+
+%------------------------------------------------
+
+\name{Ryan Mullin} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{10919 113th Ct. NE \\ Apt. F305 \\ Kirkland, Washington 98033} % Main address
+
+\address{(509)~$\cdot$~860~$\cdot$~5937 \\ ryan.mullin12@gmail.com} % Contact information
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+   \begin{rSubsection}{Apptio, an IBM Company}{May 2019 - Present}{Bellevue, WA}{}
+        \item Navigated and delivered valuable features in a 1.5 million line Java codebase alongside developing small greenfield microservices
+        \item Optimized complex matrix and graph calculations for customer data uploads and reporting using data dependency analyisis, JVM fine tuning, and concurrency optimization
+        \item Solved difficult data consistency issues, race conditions and deadlocks in a highly parallelized, distributed environment
+        \item Managed infrastructure for internal and customer facing services in AWS using infrastructure as code frameworks such as CDK and Terraform
+        \item Built CI/CD pipelines, testing and Kubernetes deployment infrastructure for multiple projects using Github Actions and ArgoCD
+        \item Developed scalable systems leveraging a range of tools including AWS ApiGateway, Kinesis Data Streams, Lambda, Athena, and DynamoDB.
+        \item Designed and implemented services to ingest millions of rows of data of system performance analytics and customer usage data to aid in fine tuning compute time, prune uploaded data, and provide actionable metrics for customers. 
+        \item Introduced the company to modern language practices and technology stacks, including rewriting a small internal log deduplication service in Rust, and educating developers on functional programming techniques in Java including monadic Stream and Optional operations.
+    \end{rSubsection}
+
+    \begin{rSubsection}{WSU Tree Fruit Research Center}{June 2017 - August 2019}{Hardware/Software developer}{Wenatchee, WA}
+        \item Designed and developed field data loggers to collect ambient and object light and temperature metrics for apple orchards with remote upload capabilities over 3G.
+        \item Prototyped using Arduino and Raspberry Pi systems
+        \item Developed custom hardware drivers for GPIO based modules using C/C++
+        \item Leveraged OpenCL image data processing to do cross section scans of crops to test for contamination and rot for a published university thesis
+    \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+	
+	\textbf{Washington State University} \hfill \textit{December 2019} \\ 
+    B.S. in Computer Science \\
+    3.8 GPA
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} p{12cm} l @{}}
+	    Programming Languages & C, C++, C\#, F\#, Java, Javascript, Typescript, Kotlin, Python, Rust, Haskell, Bash, SQL, Lua \\
+		Frameworks & CDK, Terraform, React, Material UI, Dropwizard, GWT, Hibernate, JUnit, PyTest, LocalStack \\
+		AWS Technologies & Lambda, EC2, RDS, DynamoDB, Step Functions, Api Gateway, Kinesis Datastream, S3, Athena, DocumentDB \\
+		Tools & Git, Github, ArgoCD, TeamCity, Kubernetes, Docker
+	\end{tabular}
+\end{rSection}
+
+\end{document}
