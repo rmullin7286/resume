@@ -53,24 +53,32 @@
 \begin{rSection}{Experience}
 
    \begin{rSubsection}{Apptio, an IBM Company}{May 2019 - Present}{Software Development Engineer II}{Bellevue, WA}
-        \item Navigated and delivered valuable features in a 1.5 million line Java codebase alongside developing small greenfield microservices
-        \item Optimized complex matrix and graph calculations for customer data uploads and reporting using data dependency analyisis, JVM fine tuning, and concurrency optimization
+        \item Enhanced calculation performance for Apptio's flagship platform, managing billions in IT spend data for 1800+ companies.
+        \item Delivered valuable features in a 1.5 million line monolith Java codebase, as well as greenfield distributed systems in Python, Go, and Rust.
+        \item Optimized JVM memory allocations, utilized graph-based data dependency analysis, and improved parallel execution for large-scale IT spend reports.
         \item Solved difficult data consistency issues, race conditions and deadlocks in a highly parallelized, distributed environment
-        \item Managed infrastructure for internal and customer facing services in AWS using infrastructure as code frameworks such as CDK and Terraform
-        \item Built CI/CD pipelines, testing and Kubernetes deployment infrastructure for multiple projects using Github Actions and ArgoCD
-        \item Developed scalable systems leveraging a range of tools including AWS ApiGateway, Kinesis Data Streams, Lambda, Athena, and DynamoDB.
-        \item Designed and implemented services to ingest millions of rows of data of system performance analytics and customer usage data used to fine tune compute time, prune uploaded data, and provide actionable metrics for customers. 
-        \item Introduced the company to modern language practices and technology stacks, including writing a small internal log deduplication service in Rust, and educating developers on functional programming techniques in Java including monadic Stream and Optional operations.
-    \end{rSubsection}
+        \item Used CDK and Terraform to manage infrastructure for internal and customer facing services in AWS
+        \item Built CI/CD pipelines for Kubernetes and AWS projects using Github Actions and ArgoCD
+        \item Leveraged AWS Step Functions, EC2, S3, RDS, Lambda, Athena, and DynamoDB to create scalable systems.
+        \item Used Step Functions and Lambda to create our internal system for performance regression testing, used every release.
+        \item Designed and implemented a service to ingest over 100M+ calculation analytics datapoints daily across
+            our application fleet, used to optimize computations, prune customer data, and provide actionable insights for customers using the Calc Profiler UI.
+        \item Passionate about language theory and its applications in software. Ran workshops on functional
+            programming in modern Java, created developer guides for advanced features in various languages, 
+            and am currently leading the adoption of Rust into our team's tech stack.
+   \end{rSubsection}
 
     \begin{rSubsection}{WSU Tree Fruit Research Center}{June 2017 - August 2018}{Hardware/Software developer}{Wenatchee, WA}
-        \item Designed and developed field data loggers to collect ambient and object light and temperature metrics for apple orchards with remote upload capabilities over 3G.
-        \item Prototyped using Arduino and Raspberry Pi systems
+        \item Designed and developed field data loggers to collect luminosity and temperature metrics for apple orchards
+            with remote data upload over 3G.
         \item Developed custom hardware drivers for GPIO based modules using C/C++
-        \item Leveraged OpenCV image data processing to do cross section scans of crops to test for contamination and rot for a published university thesis
+        \item Wrote image manipulation algorithms with OpenCV to analyze crop cross section scans, published in a
+            university thesis.
+        \item Our research team made the Cosmic Crisp apple.
     \end{rSubsection}
 
 \end{rSection}
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -91,11 +99,11 @@
 \begin{rSection}{Technical Strengths}
 
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} p{12cm} l @{}}
-	    Programming Languages & C, C++, C\#, F\#, Java, Javascript, Typescript, Kotlin, Python, Rust, Haskell, Bash, SQL, Lua \\
+	    Programming Languages & Java, Kotlin, Rust, Python, Haskell, C, C++, C\#, F\#, Javascript, Typescript, Bash, SQL, Lua \\
 		Frameworks & CDK, Terraform, React, Material UI, Dropwizard, GWT, Hibernate, JUnit, PyTest, LocalStack \\
-		AWS Technologies & Lambda, EC2, RDS, DynamoDB, Step Functions, Api Gateway, Kinesis Datastream, S3, Athena, DocumentDB \\
-		Tools & Git, Github, ArgoCD, TeamCity, Kubernetes, Docker
-	\end{tabular}
+		AWS Technologies & Step Functions, EC2, RDS, DynamoDB, Lambda, Api Gateway, Kinesis Datastream, S3, Athena, DocumentDB \\
+		Tools & Kubernetes, Docker, ArgoCD, Github Enterprise, TeamCity
+    \end{tabular}
 \end{rSection}
 
 \end{document}
